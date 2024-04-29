@@ -1,4 +1,5 @@
+build/
+vcproject/
 src/moc_*
-build
 /Example/moc_mainwindow.cpp
 /Example/ui_mainwindow.h
