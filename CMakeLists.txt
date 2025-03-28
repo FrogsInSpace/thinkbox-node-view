@@ -7,9 +7,9 @@ project( NodeView )
 find_package( thinkboxcmlibrary REQUIRED )
 include( ThinkboxCMLibrary )
 
-set( SUPPORTED_MAYA_VERSIONS 2022 2023 )
+set( SUPPORTED_MAYA_VERSIONS 2022 2023 2024 2025 )
  
-option( MAYA_VERSION "The version of QtMaya to build the library against." 2022 )
+option( MAYA_VERSION "The version of QtMaya to build the library against." 2025 )
 option( BUILD_EXAMPLES "Build the example NodeView project" OFF )
 
 if( NOT MAYA_VERSION IN_LIST SUPPORTED_MAYA_VERSIONS )

@@ -10,6 +10,7 @@ import pprint
 
 VALID_MAYA_CONFIGS: dict[tuple[str, str], set[str]] = {
     ('Visual Studio', '16'): { '2022', '2023' },
+    ('Visual Studio', '17'): { '2024', '2025', '2026' },
     ('gcc', '7'): { '2022', '2023' },
     ('gcc', '9'): { '2022', '2023' },
     ('apple-clang', '10.0'): { '2022', '2023' }
@@ -22,7 +23,7 @@ COMMON_PACKAGER_ARGS: dict[str, Any] = {
 }
 
 WINDOWS_PACKAGER_ARGS: dict[str, Any] = {
-    'visual_versions': ['16'],
+    'visual_versions': ['16', '17'],
     'visual_runtimes': ['MD']
 }
 
